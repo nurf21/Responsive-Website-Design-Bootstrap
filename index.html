@@ -17,7 +17,6 @@
 
 <body>
     <div class="container-fluid">
-
         <header>
             <div class="row">
                 <div class="col-lg-8">
@@ -30,61 +29,119 @@
                 </div>
             </div>
         </header>
-
         <div class="content">
             <div class="row">
                 <div class="col-lg-1">
                     <section>
-                        <img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu">
-                        <img class="sidebar-icon" src="assets/img/clipboard.png" alt="history">
-                        <img class="sidebar-icon" src="assets/img/add.png" alt="add">
+                        <a href=""><img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu"></a>
+                        <a href=""><img class="sidebar-icon" src="assets/img/clipboard.png" alt="history"></a>
+                        <a href="" data-toggle="modal" data-target="#addModal">
+                            <img class="sidebar-icon" src="assets/img/add.png" alt="add">
+                        </a>
                     </section>
                 </div>
                 <div class="col-lg-7">
                     <article>
-                        <div class="row row-cols-lg-3" id="items">
-                            <div class="col">
+                        <div class="row row-cols-lg-3">
+                            <div class="col product-list">
                                 <img src="assets/img/jeremy-ricketts-6ZnhM-xBpos-unsplash.png" alt="espresso">
-                                <p>Espresso <br><span><strong>Rp. 10.000</strong></span></p>
+                                <label>Espresso <br><span><strong>Rp. 10.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/bear.png" alt="coffee-latte">
-                                <p>Coffee Latte <br><span><strong>Rp. 15.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/bear.png" alt="coffee-latte">
+                                <label>Coffee Latte <br><span><strong>Rp. 15.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png"
-                                    alt="cappucino">
-                                <p>Cappucino <br><span><strong>Rp. 5.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="cappucino">
+                                <label>Cappucino <br><span><strong>Rp. 5.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/redvelvet.png" alt="red-velvet">
-                                <p>Red Velvet Latte <br><span><strong>Rp. 33.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/redvelvet.png" alt="red-velvet">
+                                <label>Red Velvet Latte <br><span><strong>Rp. 33.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/chocorum.png" alt="chocho-rum">
-                                <p>Choco Rum <br><span><strong>Rp. 28.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/chocorum.png" alt="chocho-rum">
+                                <label>Choco Rum <br><span><strong>Rp. 28.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/blackforest.png" alt="black-forest">
-                                <p>Black Forest <br><span><strong>Rp. 30.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/blackforest.png" alt="black-forest">
+                                <label>Black Forest <br><span><strong>Rp. 30.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/chickenkatsu.png" alt="chickenkatsu">
-                                <p>Chicken Katsu Dabu-dabu <br><span><strong>Rp. 60.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/chickenkatsu.png" alt="chickenkatsu">
+                                <label>Chicken Katsu Dabu-dabu <br><span><strong>Rp. 60.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/salmon.png" alt="salmon">
-                                <p>Salmon Truffle Teriyaki <br><span><strong>Rp. 60.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/salmon.png" alt="salmon">
+                                <label>Salmon Truffle Teriyaki <br><span><strong>Rp. 60.000</strong></span></label>
                             </div>
-                            <div class="col"><img src="assets/img/wiener.png" alt="wiener">
-                                <p>Wiener Schnitzel <br><span><strong>Rp. 69.000</strong></span></p>
+                            <div class="col product-list">
+                                <img src="assets/img/wiener.png" alt="wiener">
+                                <label>Wiener Schnitzel <br><span><strong>Rp. 69.000</strong></span></label>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4">
-                    <aside>
+                    <aside class="empty">
                         <img src="assets/img/food-and-restaurant.png" alt="empty-cart">
-                        <p>Your cart is empty <br><span class="text-muted">Please add some items from the menu</span>
-                        </p>
+                        <label>
+                            Your cart is empty <br><span class="text-muted">Please add some items from the menu</span>
+                        </label>
                     </aside>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col" style="margin-bottom: 30px;">Add Item</div>
+                    </div>
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Image</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Price</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" style="width: 60%;">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Category</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="category" style="width: 45%;">
+                                    <option disabled selected hidden>Category</option>
+                                    <option>Drink</option>
+                                    <option>Dessert</option>
+                                    <option>Food</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 50px;">
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6 align-self-end">
+                                <button type="submit" class="cancel-item-btn">Cancel</button>
+                                <button type="submit" class="add-btn">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
