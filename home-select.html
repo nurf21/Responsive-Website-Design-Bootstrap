@@ -37,57 +37,61 @@
       <div class="row">
         <div class="col-lg-1">
           <section>
-            <img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu" />
-            <img class="sidebar-icon" src="assets/img/clipboard.png" alt="history" />
-            <img class="sidebar-icon" src="assets/img/add.png" alt="add" />
+            <a href="index.html"><img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu"></a>
+            <a href="history.html">
+              <img class="sidebar-icon" src="assets/img/clipboard.png" alt="history">
+            </a>
+            <a href="" data-toggle="modal" data-target="#addModal">
+              <img class="sidebar-icon" src="assets/img/add.png" alt="add">
+            </a>
           </section>
         </div>
         <div class="col-lg-7">
           <article>
-            <div class="row row-cols-lg-3">
+            <div class="row row-cols-lg-3 row-cols-md-3 row-cols-xs-1">
               <div class="col product-list">
-                <img src="assets/img/jeremy-ricketts-6ZnhM-xBpos-unsplash.png" alt="espresso" />
+                <img src="assets/img/jeremy-ricketts-6ZnhM-xBpos-unsplash.png" alt="espresso" /><br>
                 <label>Espresso <br /><span><strong>Rp. 10.000</strong></span></label>
               </div>
               <div class="col product-list">
-                <img src="assets/img/bear.png" alt="coffee-latte" />
+                <img src="assets/img/bear.png" alt="coffee-latte" /><br>
                 <div class="select-image">
                   <img src="assets/img/tick (1).png" alt="check" />
                 </div>
                 <label>Coffee Latte <br /><span><strong>Rp. 15.000</strong></span></label>
               </div>
               <div class="col product-list">
-                <img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="cappucino" />
+                <img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="cappucino" /><br>
                 <label>Cappucino <br /><span><strong>Rp. 5.000</strong></span></label>
               </div>
               <div class="col product-list">
                 <img src="assets/img/redvelvet.png" alt="red-velvet" />
-                <label>Red Velvet Latte <br /><span><strong>Rp. 33.000</strong></span></label>
+                <label>Red Velvet Latte <br /><span><strong>Rp. 33.000</strong></span></label><br>
               </div>
               <div class="col product-list">
-                <img src="assets/img/chocorum.png" alt="chocho-rum" />
-                <label>Choco Rum <br /><span><strong>Rp. 28.000</strong></span></label>
+                <img src="assets/img/chocorum.png" alt="chocho-rum" /><br>
+                <label>Choco Rum <br /><span><strong>Rp. 28.000</strong></span></label><br>
               </div>
               <div class="col product-list">
-                <img src="assets/img/blackforest.png" alt="black-forest" />
+                <img src="assets/img/blackforest.png" alt="black-forest" /><br>
                 <div class="select-image">
                   <img src="assets/img/tick (1).png" alt="check" />
                 </div>
                 <label>Black Forest<br /><span><strong>Rp. 30.000</strong></span></label>
               </div>
               <div class="col product-list">
-                <img src="assets/img/chickenkatsu.png" alt="chickenkatsu" />
+                <img src="assets/img/chickenkatsu.png" alt="chickenkatsu" /><br>
                 <label>Chicken Katsu Dabu-dabu<br /><span><strong>Rp. 60.000</strong></span></label>
               </div>
               <div class="col product-list">
-                <img src="assets/img/salmon.png" alt="salmon" />
+                <img src="assets/img/salmon.png" alt="salmon" /><br>
                 <div class="select-image">
                   <img src="assets/img/tick (1).png" alt="check" />
                 </div>
                 <label>Salmon Truffle Teriyaki <br /><span><strong>Rp. 60.000</strong></span></label>
               </div>
               <div class="col product-list">
-                <img src="assets/img/wiener.png" alt="wiener" />
+                <img src="assets/img/wiener.png" alt="wiener" /><br>
                 <label>Wiener Schnitzel <br /><span><strong>Rp. 69.000</strong></span></label>
               </div>
             </div>
@@ -98,62 +102,62 @@
             <div class="flex-cart">
               <div class="cart-list">
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-3">
                     <img src="assets/img/bearcart.png" alt="bearcart" />
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-6 col-lg-5">
                     <label class="food-name"><strong>Coffee Latte</strong></label>
                     <div class="input-group">
                       <button class="btn">-</button>
-                      <button class="btn btn2" disabled>1</button>
+                      <input type="text" class="qty" value="1">
                       <button class="btn">+</button>
                     </div>
                   </div>
-                  <div class="col-lg-3 col align-self-end">
+                  <div class="col-3 col-lg-4 align-self-end">
                     <label class="food-price"><strong>Rp. 15.000</strong></label>
                   </div>
                 </div>
               </div>
               <div class="cart-list">
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-3">
                     <img src="assets/img/blackforestcart.png" alt="blackforestcart" />
                   </div>
 
-                  <div class="col-lg-6">
+                  <div class="col-6 col-lg-5">
                     <label class="food-name"><strong>Black Forest</strong></label>
                     <div class="input-group">
                       <button class="btn">-</button>
-                      <button class="btn btn2" disabled>1</button>
+                      <input type="text" class="qty" value="1">
                       <button class="btn">+</button>
                     </div>
                   </div>
-                  <div class="col-lg-3 col align-self-end">
+                  <div class="col-3 col-lg-4 align-self-end">
                     <label class="food-price"><strong>Rp. 30.000</strong></label>
                   </div>
                 </div>
               </div>
               <div class="cart-list">
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-3">
                     <img src="assets/img/salmoncart.png" alt="salmoncart" />
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-6 col-lg-5">
                     <label class="food-name"><strong>Salmon Truffle Teriyaki</strong></label>
                     <div class="input-group">
                       <button class="btn">-</button>
-                      <button class="btn btn2" disabled>1</button>
+                      <input type="text" class="qty" value="1">
                       <button class="btn">+</button>
                     </div>
                   </div>
-                  <div class="col-lg-3 col align-self-end">
+                  <div class="col-3 col-lg-4 align-self-end">
                     <label class="food-price"><strong>Rp. 60.000</strong></label>
                   </div>
                 </div>
               </div>
               <div class="cart-list checkout">
                 <div class="row justify-content-between" style="width: 100%;">
-                  <div class="col-5">
+                  <div class="col-6">
                     <strong>Total:</strong><br>
                     <span>*Belum termasuk ppn</span>
                   </div>
@@ -228,6 +232,56 @@
             <div class="col-4"><strong>Or</strong></div>
           </div>
           <button class="email-btn">Send Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col" style="margin-bottom: 30px;">Add Item</div>
+          </div>
+          <form>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Image</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Price</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" style="width: 60%;">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Category</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="category" style="width: 45%;">
+                  <option disabled selected hidden>Category</option>
+                  <option>Drink</option>
+                  <option>Dessert</option>
+                  <option>Food</option>
+                </select>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6 align-self-end">
+                <a href="index.html"><button class="cancel-item-btn">Cancel</button></a>
+                <button type="submit" class="add-btn">Add</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

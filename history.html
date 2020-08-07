@@ -12,43 +12,232 @@
 </head>
 
 <body>
-    <!-- <canvas id="myChart"></canvas>
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-                datasets: [{
-                        label: 'This Month',
-                        borderColor: '#00F1FF',
-                        data: [0, 10, 20, 30],
-                        fill: false,
-                        pointRadius: 0
-                    },
-                    {
-                        label: 'Last Month',
-                        borderColor: '#FFB8C6',
-                        data: [40, 50, 60, 70, 80],
-                        fill: false,
-                        pointRadius: 0
-                    }
-                ],
-            },
-            options: {
-                scales: {
-                    xAxes: [{
-                        gridLines: {
-                            display: false
-                        },
-                        ticks: {
-                            display: false
-                        }
-                    }]
-                }
-            }
-        });
-    </script> -->
+    <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-icon"><img src="assets/img/menu (1).png" alt="menu"></div>
+                    <h1>History</h1>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-lg-1">
+                <aside>
+                    <a href="index.html"><img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu"></a>
+                    <a href="history.html">
+                        <img class="sidebar-icon" src="assets/img/clipboard.png" alt="history">
+                    </a>
+                    <a href="" data-toggle="modal" data-target="#addModal">
+                        <img class="sidebar-icon" src="assets/img/add.png" alt="add">
+                    </a>
+                </aside>
+            </div>
+            <div class="col-lg-11">
+                <article>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="today-income">
+                                <div class="container">
+                                    <p>Today's Income</p>
+                                    <h3>Rp. 1.000.000</h3>
+                                    <p>+2% Yesterday</p>
+                                    <img src="assets/img/Ellipse 1.png" alt="ellipse" class="ellipse1">
+                                    <img src="assets/img/Ellipse 1.png" alt="ellipse" class="ellipse2">
+                                    <img src="assets/img/Ellipse 1.png" alt="ellipse" class="ellipse3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="order">
+                                <div class="container">
+                                    <p>Orders</p>
+                                    <h3>3270</h3>
+                                    <p>+5% Last Week</p>
+                                    <img src="assets/img/Ellipse 2.png" alt="ellipse" class="ellipse1">
+                                    <img src="assets/img/Ellipse 2.png" alt="ellipse" class="ellipse2">
+                                    <img src="assets/img/Ellipse 2.png" alt="ellipse" class="ellipse3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="year-income">
+                                <div class="container">
+                                    <p>This Year's Income</p>
+                                    <h3>Rp. 100.000.000.000 </h3>
+                                    <p>+10% Last Year</p>
+                                    <img src="assets/img/Ellipse 3.png" alt="ellipse" class="ellipse1">
+                                    <img src="assets/img/Ellipse 3.png" alt="ellipse" class="ellipse2">
+                                    <img src="assets/img/Ellipse 3.png" alt="ellipse" class="ellipse3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4>Revenue</h4>
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Month
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Day</a>
+                                        <a class="dropdown-item" href="#">Year</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart"></canvas>
+                        <script>
+                            var ctx = document.getElementById('myChart').getContext('2d');
+                            var chart = new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+                                    datasets: [{
+                                            label: 'This Month',
+                                            borderColor: '#00F1FF',
+                                            data: [24952, 48162, 46484, 4786, 3185, 19212, 15004, 24924,
+                                                36282, 27185, 23795, 19681, 29324, 18279
+                                            ],
+                                            fill: false,
+                                            pointRadius: 0
+                                        },
+                                        {
+                                            label: 'Last Month',
+                                            borderColor: '#FFB8C6',
+                                            data: [29170, 16774, 26254, 29741, 1601, 48120, 18633, 45875,
+                                                26019, 5309, 47866, 32236, 25292, 34532
+                                            ],
+                                            fill: false,
+                                            pointRadius: 0
+                                        }
+                                    ],
+                                },
+                                options: {
+                                    responsive: true,
+                                    scales: {
+                                        xAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            },
+                                            ticks: {
+                                                display: false
+                                            }
+                                        }]
+                                    },
+                                    legend: {
+                                        position: 'bottom',
+                                        labels: {
+                                            boxWidth: 10,
+                                            padding: 20
+                                        },
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+                    <div class="recent-order">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4>Recent Order</h4>
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Today
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Last Week</a>
+                                        <a class="dropdown-item" href="#">Last Month</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">INVOICES</th>
+                                        <th scope="col">CASHIER</th>
+                                        <th scope="col">DATE</th>
+                                        <th scope="col">ORDERS</th>
+                                        <th scope="col">AMOUNT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#10928</td>
+                                        <td>Cashier 1</td>
+                                        <td>06 October 2019</td>
+                                        <td>Ice Tea, Salad With peanut sauce</td>
+                                        <td>Rp. 120.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col" style="margin-bottom: 30px;">Add Item</div>
+                    </div>
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Image</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Price</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" style="width: 60%;">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Category</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="category" style="width: 45%;">
+                                    <option disabled selected hidden>Category</option>
+                                    <option>Drink</option>
+                                    <option>Dessert</option>
+                                    <option>Food</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 50px;">
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6 align-self-end">
+                                <a href="history.html"><button class="cancel-item-btn">Cancel</button></a>
+                                <button type="submit" class="add-btn">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

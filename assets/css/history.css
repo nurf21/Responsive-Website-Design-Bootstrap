@@ -1,0 +1,244 @@
+header .col-lg-12 {
+    height: 100px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    position: relative;
+}
+
+.header-icon {
+    position: absolute;
+    top: 33px;
+    left: 40px;
+}
+
+header h1 {
+    font-family: Airbnb Cereal App;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.col-lg-1 {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+a,
+.sidebar-icon {
+    margin: auto;
+    flex: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.col-lg-11 {
+    background: rgba(190, 195, 202, 0.3);
+}
+
+article {
+    margin: 25px 10px;
+}
+
+.col-lg-4 {
+    margin: 20px 0;
+}
+
+.col-lg-4 .today-income {
+    height: 200px;
+    background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+    border-radius: 10px;
+    display: flex;
+}
+
+.col-lg-4 .order {
+    height: 200px;
+    background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+    border-radius: 10px;
+    display: flex;
+}
+
+.col-lg-4 .year-income {
+    height: 200px;
+    background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+    border-radius: 10px;
+    display: flex;
+}
+
+.col-lg-4 .container {
+    font-family: Airbnb Cereal App;
+    margin: auto 20px;
+}
+
+.col-lg-4 p {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.col-lg-4 h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.col-lg-4 .ellipse1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: -1;
+}
+
+.col-lg-4 .ellipse2 {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: -2;
+}
+
+.col-lg-4 .ellipse3 {
+    position: absolute;
+    top: 55px;
+    right: 85px;
+    z-index: -3;
+}
+
+.revenue {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.revenue .row {
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.revenue h4 {
+    font-family: Airbnb Cereal App;
+    font-size: 30px;
+}
+
+.dropdown-toggle {
+    font-family: Airbnb Cereal App;
+    color: #4F4E4E;
+    background: #CECECE;
+    border-radius: 10px;
+    border: none;
+}
+
+#myChart.chartjs-render-monitor {
+    padding: 0 20px 30px 20px;
+}
+
+.recent-order {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.recent-order .row {
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.recent-order h4 {
+    font-family: Airbnb Cereal App;
+    font-size: 30px;
+}
+
+table {
+    padding: 20px 0;
+    margin: 0 20px;
+    text-align: center;
+    font-family: Airbnb Cereal App;
+    font-size: 15px;
+}
+
+table tbody {
+    color: #CECECE;
+}
+
+#addModal .modal-body .row {
+    font-size: 18px;
+    font-family: Airbnb Cereal App;
+    font-weight: bold;
+}
+
+#addModal .modal-body .form-control {
+    border: 1px solid #CECECE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: Airbnb Cereal App;
+}
+
+#addModal .modal-body .col-lg-6.align-self-end {
+    text-align: right;
+}
+
+#addModal .modal-body .cancel-item-btn {
+    width: 90px;
+    height: 33px;
+    background: #F24F8A;
+    border-radius: 10px;
+    border: none;
+    font-family: Airbnb Cereal App;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+#addModal .modal-body .add-btn {
+    width: 90px;
+    height: 33px;
+    background: #57CAD5;
+    border-radius: 10px;
+    border: none;
+    font-family: Airbnb Cereal App;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 575.98px) {
+    aside {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    a {
+        margin: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    aside {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    a {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    aside {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    a {
+        margin: 0;
+    }
+}

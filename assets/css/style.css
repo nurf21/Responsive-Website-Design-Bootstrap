@@ -5,7 +5,7 @@
 
 /* header */
 header .col-lg-8 {
-  height: 106px;
+  height: 100px;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -30,7 +30,7 @@ header h1 {
 
 /* cart */
 header .col-lg-4 {
-  height: 106px;
+  height: 100px;
   background: #ffffff;
   box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -89,13 +89,14 @@ article {
 }
 
 .product-list img {
-  width: 227px;
-  height: 177px;
+  width: 203px;
+  height: 153px;
+  margin-bottom: 15px;
 }
 
 .select-image {
-  width: 227px;
-  height: 177px;
+  width: 203px;
+  height: 153px;
   border-radius: 10px 10px 0px 0px;
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -104,9 +105,9 @@ article {
 }
 
 .select-image img {
-  width: 50px;
-  height: 50px;
-  margin: 64px;
+  width: 50px !important;
+  height: 50px !important;
+  margin: 50px;
 }
 
 .product-list label {
@@ -166,19 +167,25 @@ aside {
   box-sizing: border-box;
   color: #82de3a;
   border-radius: 0;
+  text-align: center;
 }
 
-.cart-list button.btn2 {
+.qty {
   width: 40px;
   height: 40px;
   background: #ffffff;
   border: 1px solid #82de3a;
   box-sizing: border-box;
   color: #82de3a;
+  text-align: center;
 }
 
 .cart-list label.food-price {
   font-size: 15px;
+}
+
+.col-3.col-lg-4.align-self-end {
+  border: none;
 }
 
 .cart-list label.total {
@@ -191,6 +198,7 @@ aside {
 
 .justify-content-between {
   font-size: 20px;
+  margin: 0;
 }
 
 .justify-content-between span {
@@ -198,7 +206,7 @@ aside {
 }
 
 .cart-list.checkout {
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -298,4 +306,359 @@ button.cancel-btn {
   font-family: Airbnb Cereal App;
   font-size: 18px;
   color: #FFFFFF;
+}
+
+@media (min-width: 319px) and (max-width: 321px) {
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 20px !important;
+  }
+
+  label.food-name {
+    font-size: 16px !important;
+  }
+
+  .cart-list img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .justify-content-between {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 376px) {
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 48px !important;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 415px) {
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 66px !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 769px) {
+  .select-image {
+    margin-left: 12px !important;
+  }
+}
+
+@media (min-width: 449px) and (max-width: 451px) {
+  .select-image {
+    margin-left: 86px !important;
+  }
+}
+
+@media (min-width: 424px) and (max-width: 426px) {
+  .select-image {
+    margin-left: 74px !important;
+  }
+}
+
+@media (min-width: 279px) and (max-width: 281px) {
+  .select-image {
+    margin-left: 0 !important;
+  }
+
+  .cart-list img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .cart-list label.food-name {
+    font-size: 15px;
+  }
+
+  .cart-list button {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .qty {
+    width: 30px;
+    height: 30px;
+  }
+
+  .justify-content-between {
+    font-size: 13px;
+  }
+
+  .justify-content-between span {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 359px) and (max-width: 361px) {
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 40px !important;
+  }
+
+  .justify-content-between {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 412px) {
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 67px !important;
+  }
+
+  .justify-content-between {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  .col.product-list {
+    text-align: center;
+  }
+
+  .product-list img {
+    width: auto;
+    height: auto;
+  }
+
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 4px;
+  }
+
+  .select-image img {
+    margin: 75px;
+  }
+
+  .cart-list img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button.checkout-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  button.cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  section {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  .col.product-list {
+    text-align: center;
+  }
+
+  .product-list img {
+    width: auto;
+    height: auto;
+  }
+
+  .select-image {
+    width: 250px;
+    height: 200px;
+    margin-left: 51px;
+  }
+
+  .select-image img {
+    margin: 75px;
+  }
+
+  .cart-list img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button.checkout-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  button.cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  .col.product-list.kosong {
+    display: none;
+  }
+
+  .col.product-list {
+    text-align: center;
+  }
+
+  .select-image {
+    margin-left: 50px;
+  }
+
+  .cart-list img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button.checkout-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  button.cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .product-list img {
+    width: 203px;
+    height: 153px;
+  }
+
+  .col-3.col-lg-4.align-self-end {
+    border: none !important;
+  }
+
+  .cart-list img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button.checkout-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  button.cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+  html {
+    height: 1366px;
+  }
+
+  header .col-lg-8 {
+    height: 150px;
+  }
+
+  header .col-lg-4 {
+    height: 150px;
+  }
+
+  .product-list img {
+    width: 169px;
+    height: 119px;
+  }
+
+  .content .col-lg-1 {
+    height: 1216px;
+  }
+
+  .select-image {
+    width: 169px;
+    height: 119px;
+  }
+
+  .select-image img {
+    margin: 35px;
+  }
+
+  .cart-list button {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .qty {
+    width: 30px;
+    height: 30px;
+  }
+
+  button.checkout-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  button.cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .cart-list label.food-name {
+    font-size: 15px;
+  }
+
+  .justify-content-between {
+    font-size: 17px;
+  }
+
+  .justify-content-between span {
+    font-size: 13px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .product-list img {
+    width: 203px;
+    height: 153px;
+  }
+
+  .cart-list img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button.checkout-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  button.cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
