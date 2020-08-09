@@ -2,16 +2,12 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- Bootstrap CSS -->
+  <meta name="description" content="Learn Responsive Web Design (RWD) using HTML, CSS, and Bootstrap">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
-  <!-- External CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
   <title>Home Select</title>
 </head>
 
@@ -33,271 +29,253 @@
         </div>
       </div>
     </header>
-    <div class="content">
-      <div class="row">
-        <div class="col-lg-1">
-          <section>
-            <a href="index.html"><img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu"></a>
-            <a href="history.html">
-              <img class="sidebar-icon" src="assets/img/clipboard.png" alt="history">
-            </a>
-            <a href="" data-toggle="modal" data-target="#addModal">
-              <img class="sidebar-icon" src="assets/img/add.png" alt="add">
-            </a>
-          </section>
-        </div>
-        <div class="col-lg-7">
-          <article>
-            <div class="row row-cols-lg-3 row-cols-md-3 row-cols-xs-1">
-              <div class="col product-list">
-                <img src="assets/img/jeremy-ricketts-6ZnhM-xBpos-unsplash.png" alt="espresso" /><br>
-                <label>Espresso <br /><span><strong>Rp. 10.000</strong></span></label>
+    <div class="row">
+      <div class="col-lg-1 nav-icons">
+        <nav>
+          <a href=" index.html"><img class="sidebar-icon" src="assets/img/fork.png" alt="food-menu"></a>
+          <a href="history.html">
+            <img class="sidebar-icon" src="assets/img/clipboard.png" alt="history">
+          </a>
+          <a href="" data-toggle="modal" data-target="#addModal">
+            <img class="sidebar-icon" src="assets/img/add.png" alt="add">
+          </a>
+        </nav>
+      </div>
+      <div class="col-lg-7 food-menu">
+        <article>
+          <div class="row row-cols-lg-3 row-cols-md-3">
+            <div class="col product-list">
+              <img src="assets/img/jeremy-ricketts-6ZnhM-xBpos-unsplash.png" alt="espresso"><br>
+              <label>Espresso<br><span><strong>Rp. 10.000</strong></span></label>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/bear.png" alt="coffee-latte"><br>
+              <div class="select-image">
+                <img src="assets/img/tick (1).png" alt="check">
               </div>
-              <div class="col product-list">
-                <img src="assets/img/bear.png" alt="coffee-latte" /><br>
-                <div class="select-image">
-                  <img src="assets/img/tick (1).png" alt="check" />
+              <label>Coffee Latte<br><span><strong>Rp. 15.000</strong></span></label>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="cappucino"><br>
+              <label>Cappucino<br><span><strong>Rp. 5.000</strong></span></label>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/redvelvet.png" alt="red-velvet"><br>
+              <label>Red Velvet Latte<br><span><strong>Rp. 33.000</strong></span></label><br>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/chocorum.png" alt="chocho-rum"><br>
+              <label>Choco Rum<br><span><strong>Rp. 28.000</strong></span></label><br>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/blackforest.png" alt="black-forest"><br>
+              <div class="select-image">
+                <img src="assets/img/tick (1).png" alt="check">
+              </div>
+              <label>Black Forest<br><span><strong>Rp. 30.000</strong></span></label>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/chickenkatsu.png" alt="chickenkatsu"><br>
+              <label>Chicken Katsu Dabu-dabu<br><span><strong>Rp. 60.000</strong></span></label>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/salmon.png" alt="salmon"><br>
+              <div class="select-image">
+                <img src="assets/img/tick (1).png" alt="check">
+              </div>
+              <label>Salmon Truffle Teriyaki<br><span><strong>Rp. 60.000</strong></span></label>
+            </div>
+            <div class="col product-list">
+              <img src="assets/img/wiener.png" alt="wiener"><br>
+              <label>Wiener Schnitzel<br><span><strong>Rp. 69.000</strong></span></label>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 carts">
+        <section>
+          <div class="cart-list">
+            <div class="row">
+              <div class="col-3">
+                <img src="assets/img/bearcart.png" alt="bearcart" />
+              </div>
+              <div class="col-6 col-lg-5">
+                <label class="food-name"><strong>Coffee Latte</strong></label>
+                <div class="input-group">
+                  <button class="btn">-</button>
+                  <input type="text" class="qty" value="1">
+                  <button class="btn">+</button>
                 </div>
-                <label>Coffee Latte <br /><span><strong>Rp. 15.000</strong></span></label>
               </div>
-              <div class="col product-list">
-                <img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="cappucino" /><br>
-                <label>Cappucino <br /><span><strong>Rp. 5.000</strong></span></label>
-              </div>
-              <div class="col product-list">
-                <img src="assets/img/redvelvet.png" alt="red-velvet" />
-                <label>Red Velvet Latte <br /><span><strong>Rp. 33.000</strong></span></label><br>
-              </div>
-              <div class="col product-list">
-                <img src="assets/img/chocorum.png" alt="chocho-rum" /><br>
-                <label>Choco Rum <br /><span><strong>Rp. 28.000</strong></span></label><br>
-              </div>
-              <div class="col product-list">
-                <img src="assets/img/blackforest.png" alt="black-forest" /><br>
-                <div class="select-image">
-                  <img src="assets/img/tick (1).png" alt="check" />
-                </div>
-                <label>Black Forest<br /><span><strong>Rp. 30.000</strong></span></label>
-              </div>
-              <div class="col product-list">
-                <img src="assets/img/chickenkatsu.png" alt="chickenkatsu" /><br>
-                <label>Chicken Katsu Dabu-dabu<br /><span><strong>Rp. 60.000</strong></span></label>
-              </div>
-              <div class="col product-list">
-                <img src="assets/img/salmon.png" alt="salmon" /><br>
-                <div class="select-image">
-                  <img src="assets/img/tick (1).png" alt="check" />
-                </div>
-                <label>Salmon Truffle Teriyaki <br /><span><strong>Rp. 60.000</strong></span></label>
-              </div>
-              <div class="col product-list">
-                <img src="assets/img/wiener.png" alt="wiener" /><br>
-                <label>Wiener Schnitzel <br /><span><strong>Rp. 69.000</strong></span></label>
+              <div class="col-3 col-lg-4 align-self-end">
+                <label class="food-price"><strong>Rp. 15.000</strong></label>
               </div>
             </div>
-          </article>
-        </div>
-        <div class="col-lg-4">
-          <aside>
-            <div class="flex-cart">
-              <div class="cart-list">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="assets/img/bearcart.png" alt="bearcart" />
-                  </div>
-                  <div class="col-6 col-lg-5">
-                    <label class="food-name"><strong>Coffee Latte</strong></label>
-                    <div class="input-group">
-                      <button class="btn">-</button>
-                      <input type="text" class="qty" value="1">
-                      <button class="btn">+</button>
-                    </div>
-                  </div>
-                  <div class="col-3 col-lg-4 align-self-end">
-                    <label class="food-price"><strong>Rp. 15.000</strong></label>
-                  </div>
+          </div>
+          <div class="cart-list">
+            <div class="row">
+              <div class="col-3">
+                <img src="assets/img/blackforestcart.png" alt="blackforestcart" />
+              </div>
+              <div class="col-6 col-lg-5">
+                <label class="food-name"><strong>Black Forest</strong></label>
+                <div class="input-group">
+                  <button class="btn">-</button>
+                  <input type="text" class="qty" value="1">
+                  <button class="btn">+</button>
                 </div>
               </div>
-              <div class="cart-list">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="assets/img/blackforestcart.png" alt="blackforestcart" />
-                  </div>
-
-                  <div class="col-6 col-lg-5">
-                    <label class="food-name"><strong>Black Forest</strong></label>
-                    <div class="input-group">
-                      <button class="btn">-</button>
-                      <input type="text" class="qty" value="1">
-                      <button class="btn">+</button>
-                    </div>
-                  </div>
-                  <div class="col-3 col-lg-4 align-self-end">
-                    <label class="food-price"><strong>Rp. 30.000</strong></label>
-                  </div>
-                </div>
-              </div>
-              <div class="cart-list">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="assets/img/salmoncart.png" alt="salmoncart" />
-                  </div>
-                  <div class="col-6 col-lg-5">
-                    <label class="food-name"><strong>Salmon Truffle Teriyaki</strong></label>
-                    <div class="input-group">
-                      <button class="btn">-</button>
-                      <input type="text" class="qty" value="1">
-                      <button class="btn">+</button>
-                    </div>
-                  </div>
-                  <div class="col-3 col-lg-4 align-self-end">
-                    <label class="food-price"><strong>Rp. 60.000</strong></label>
-                  </div>
-                </div>
-              </div>
-              <div class="cart-list checkout">
-                <div class="row justify-content-between" style="width: 100%;">
-                  <div class="col-6">
-                    <strong>Total:</strong><br>
-                    <span>*Belum termasuk ppn</span>
-                  </div>
-                  <div class="col-5" style="text-align: end;">
-                    <strong>Rp. 105.000*</strong>
-                  </div>
-                </div>
-                <button type="button" class="checkout-btn" data-toggle="modal"
-                  data-target="#checkoutModal">Checkout</button>
-                <button class="cancel-btn">Cancel</button>
+              <div class="col-3 col-lg-4 align-self-end">
+                <label class="food-price"><strong>Rp. 30.000</strong></label>
               </div>
             </div>
-        </div>
-        </aside>
+          </div>
+          <div class="cart-list">
+            <div class="row">
+              <div class="col-3">
+                <img src="assets/img/salmoncart.png" alt="salmoncart" />
+              </div>
+              <div class="col-6 col-lg-5">
+                <label class="food-name"><strong>Salmon Truffle Teriyaki</strong></label>
+                <div class="input-group">
+                  <button class="btn">-</button>
+                  <input type="text" class="qty" value="1">
+                  <button class="btn">+</button>
+                </div>
+              </div>
+              <div class="col-3 col-lg-4 align-self-end">
+                <label class="food-price"><strong>Rp. 60.000</strong></label>
+              </div>
+            </div>
+          </div>
+          <div class="cart-list checkout">
+            <div class="row">
+              <div class="col-6">
+                <strong>Total:</strong><br>
+                <span>*Belum termasuk ppn</span>
+              </div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Rp. 105.000*</strong>
+              </div>
+            </div>
+            <button type="button" class="checkout-btn" data-toggle="modal"
+              data-target="#checkoutModal">Checkout</button>
+            <button class="cancel-btn">Cancel</button>
+          </div>
+        </section>
       </div>
     </div>
-  </div>
-  </div>
-
-  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row justify-content-between" style="width: 100%; margin: auto;">
-            <div class="col-5" style="margin-bottom: 50px;">
-              <strong>Checkout</strong><br>
-              <strong><span>Cashier : Pevita Pierce</span></strong>
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row justify-content-between" style="width: 100%; margin: auto;">
+              <div class="col-5" style="margin-bottom: 50px;">
+                <strong>Checkout</strong><br>
+                <strong><span>Cashier : Pevita Pierce</span></strong>
+              </div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Receipt no: #010410919</strong>
+              </div>
+              <div class="col-5">
+                <strong>Coffee Latte 1x</strong>
+              </div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Rp. 15.000</strong>
+              </div>
+              <div class="col-5">
+                <strong>Black Forest 1x</strong>
+              </div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Rp. 30.000</strong>
+              </div>
+              <div class="col-5">
+                <strong>Salmon Truffle Teriyaki 1x</strong>
+              </div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Rp. 60.000</strong>
+              </div>
+              <div class="col-5">
+                <strong>PPN 10%</strong>
+              </div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Rp. 10.500</strong>
+              </div>
+              <div class="col-5"></div>
+              <div class="col-6" style="text-align: end;">
+                <strong>Total: Rp. 115.500</strong>
+              </div>
+              <div class="col-5">
+                <strong>Payment: Cash</strong>
+              </div>
             </div>
-            <div class="col-6" style="text-align: end;">
-              <strong>Receipt no: #010410919</strong>
+            <button class="print-btn">Print</button>
+            <div class="row justify-content-center" style="text-align: center; margin: 5px 0;">
+              <div class="col-4"><strong>Or</strong></div>
             </div>
-
-            <div class="col-5">
-              <strong>Coffee Latte 1x</strong>
-            </div>
-            <div class="col-6" style="text-align: end;">
-              <strong>Rp. 15.000</strong>
-            </div>
-
-            <div class="col-5">
-              <strong>Black Forest 1x</strong>
-            </div>
-            <div class="col-6" style="text-align: end;">
-              <strong>Rp. 30.000</strong>
-            </div>
-
-            <div class="col-5">
-              <strong>Salmon Truffle Teriyaki 1x</strong>
-            </div>
-            <div class="col-6" style="text-align: end;">
-              <strong>Rp. 60.000</strong>
-            </div>
-
-            <div class="col-5">
-              <strong>PPN 10%</strong>
-            </div>
-            <div class="col-6" style="text-align: end;">
-              <strong>Rp. 10.500</strong>
-            </div>
-
-            <div class="col-5"></div>
-            <div class="col-6" style="text-align: end;">
-              <strong>Total: Rp. 115.500</strong>
-            </div>
-
-            <div class="col-5">
-              <strong>Payment: Cash</strong>
-            </div>
+            <button class="email-btn">Send Email</button>
           </div>
-          <button class="print-btn">Print</button>
-          <div class="row justify-content-center" style="text-align: center; margin: 5px 0;">
-            <div class="col-4"><strong>Or</strong></div>
-          </div>
-          <button class="email-btn">Send Email</button>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col" style="margin-bottom: 30px;">Add Item</div>
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col" style="margin-bottom: 30px;">Add Item</div>
+            </div>
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" style="width: 60%;">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                  <select class="form-control" id="category" style="width: 45%;">
+                    <option disabled selected hidden>Category</option>
+                    <option>Drink</option>
+                    <option>Dessert</option>
+                    <option>Food</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 50px;">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 align-self-end">
+                  <a href="index.html"><button class="cancel-item-btn">Cancel</button></a>
+                  <button type="submit" class="add-btn">Add</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <form>
-            <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Image</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Price</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" style="width: 60%;">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Category</label>
-              <div class="col-sm-10">
-                <select class="form-control" id="category" style="width: 45%;">
-                  <option disabled selected hidden>Category</option>
-                  <option>Drink</option>
-                  <option>Dessert</option>
-                  <option>Food</option>
-                </select>
-              </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-              <div class="col-lg-6"></div>
-              <div class="col-lg-6 align-self-end">
-                <a href="index.html"><button class="cancel-item-btn">Cancel</button></a>
-                <button type="submit" class="add-btn">Add</button>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
-    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous">
-  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

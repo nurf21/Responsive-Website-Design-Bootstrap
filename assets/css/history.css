@@ -25,7 +25,7 @@ header h1 {
     z-index: 2;
 }
 
-aside {
+nav {
     display: flex;
     flex-direction: column;
 }
@@ -42,8 +42,8 @@ a,
     background: rgba(190, 195, 202, 0.3);
 }
 
-article {
-    margin: 25px 10px;
+.container-content {
+    margin-top: 25px;
 }
 
 .col-lg-4 {
@@ -211,7 +211,7 @@ table tbody {
 }
 
 @media (max-width: 575.98px) {
-    aside {
+    nav {
         flex-direction: row;
         text-align: center;
     }
@@ -222,7 +222,7 @@ table tbody {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    aside {
+    nav {
         flex-direction: row;
         text-align: center;
     }
@@ -233,7 +233,7 @@ table tbody {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    aside {
+    nav {
         flex-direction: row;
         text-align: center;
     }
