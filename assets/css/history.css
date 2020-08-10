@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Airbnb Cereal App;
+    src: url(../font/AirbnbCerealBook.ttf);
+}
+
 header .col-lg-12 {
     height: 100px;
     background: #ffffff;
