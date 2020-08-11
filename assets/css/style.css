@@ -3,6 +3,10 @@
   src: url(../font/AirbnbCerealBook.ttf);
 }
 
+body {
+  font-family: Airbnb Cereal App;
+}
+
 /* header */
 header .col-lg-8 {
   height: 100px;
@@ -21,7 +25,6 @@ header .col-lg-8 {
 
 /* text header */
 header h1 {
-  font-family: Airbnb Cereal App;
   font-size: 30px;
   flex: 8;
   margin: auto;
@@ -38,7 +41,6 @@ header .col-lg-4 {
 }
 
 header h2 {
-  font-family: Airbnb Cereal App;
   font-size: 25px;
   margin: auto;
   text-align: center;
@@ -91,7 +93,7 @@ article {
 .product-list img {
   width: 203px;
   height: 153px;
-  margin: 0 0 15px 4px;
+  margin-bottom: 15px;
 }
 
 .select-image {
@@ -101,7 +103,6 @@ article {
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
   text-align: center;
-  margin-left: 4px;
   top: 0;
 }
 
@@ -112,7 +113,6 @@ article {
 }
 
 .product-list label {
-  font-family: Airbnb Cereal App;
   font-size: 25px;
 }
 
@@ -124,7 +124,6 @@ article {
 
 section.empty {
   margin: auto;
-  font-family: Airbnb Cereal App;
   font-size: 30px;
   text-align: center;
 }
@@ -135,17 +134,16 @@ section.empty {
 }
 
 .text-muted {
-  font-family: Airbnb Cereal App;
   font-size: 20px;
   color: #cecece !important;
 }
 
 /* cart home select */
 section {
-  margin: 25px auto;
-  font-family: Airbnb Cereal App;
+  margin: 25px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .cart-list {
@@ -202,7 +200,7 @@ section {
 }
 
 button.checkout-btn {
-  width: 401px;
+  width: 100%;
   height: 61px;
   background: #57cad5;
   border: none;
@@ -212,7 +210,7 @@ button.checkout-btn {
 }
 
 button.cancel-btn {
-  width: 401px;
+  width: 100%;
   height: 61px;
   background: #f24f8a;
   border: none;
@@ -224,12 +222,10 @@ button.cancel-btn {
 /* checkout modal */
 #checkoutModal .modal-body .row {
   font-size: 14px;
-  font-family: Airbnb Cereal App;
 }
 
 #checkoutModal .modal-body .row span {
   font-size: 14px;
-  font-family: Airbnb Cereal App;
 }
 
 #checkoutModal .modal-body .row .col-5 {
@@ -239,7 +235,6 @@ button.cancel-btn {
 #checkoutModal .modal-body .print-btn {
   width: 100%;
   height: 50px;
-  font-family: Airbnb Cereal App;
   font-size: 25px;
   color: #ffffff;
   background: #f24f8a;
@@ -250,7 +245,6 @@ button.cancel-btn {
 #checkoutModal .modal-body .email-btn {
   width: 100%;
   height: 50px;
-  font-family: Airbnb Cereal App;
   font-size: 25px;
   color: #ffffff;
   background: #57cad5;
@@ -261,7 +255,6 @@ button.cancel-btn {
 /* add modal */
 #addModal .modal-body .row {
   font-size: 18px;
-  font-family: Airbnb Cereal App;
   font-weight: bold;
 }
 
@@ -269,7 +262,6 @@ button.cancel-btn {
   border: 1px solid #CECECE;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  font-family: Airbnb Cereal App;
 }
 
 #addModal .modal-body .col-lg-6.align-self-end {
@@ -282,7 +274,6 @@ button.cancel-btn {
   background: #F24F8A;
   border-radius: 10px;
   border: none;
-  font-family: Airbnb Cereal App;
   font-size: 18px;
   color: #FFFFFF;
   margin-right: 10px;
@@ -294,7 +285,6 @@ button.cancel-btn {
   background: #57CAD5;
   border-radius: 10px;
   border: none;
-  font-family: Airbnb Cereal App;
   font-size: 18px;
   color: #FFFFFF;
 }
@@ -309,15 +299,15 @@ button.cancel-btn {
     font-size: 15px;
   }
 
-  .cart-list button {
-    width: 30px !important;
-    height: 30px !important;
-    font-size: 10px;
+  .cart-list .btn {
+    width: 25px !important;
+    height: 25px !important;
+    font-size: 7px;
   }
 
   .qty {
-    width: 30px !important;
-    height: 30px !important;
+    width: 25px !important;
+    height: 25px !important;
     font-size: 10px;
   }
 
@@ -330,13 +320,19 @@ button.cancel-btn {
   }
 
   button.checkout-btn {
-    width: 100% !important;
+    width: 100%;
     margin: 15px 0;
   }
 
   button.cancel-btn {
-    width: 100% !important;
+    width: 100%;
     margin: 5px 0;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 374px) {
+  .product-list {
+    padding: 0 35px;
   }
 }
 
@@ -355,6 +351,18 @@ button.cancel-btn {
     height: 60px !important;
   }
 
+  .cart-list .btn {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 10px;
+  }
+
+  .cart-list .qty {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 10px;
+  }
+
   .cart-list.checkout {
     font-size: 16px;
   }
@@ -364,6 +372,17 @@ button.cancel-btn {
   }
 }
 
+@media (min-width: 374px) and (max-width: 424px) {
+  .product-list {
+    padding: 0 62px;
+  }
+}
+
+@media (min-width: 424px) and (max-width: 559px) {
+  .product-list {
+    padding: 0 87px;
+  }
+}
 
 @media (min-width: 1023px) and (max-width: 1025px) {
   .product-list img {
@@ -541,18 +560,8 @@ button.cancel-btn {
   }
 
   .cart-list img {
-    width: 80px;
-    height: 80px;
-  }
-
-  button.checkout-btn {
-    width: 100%;
-    margin: 15px 0;
-  }
-
-  button.cancel-btn {
-    width: 100%;
-    margin: 5px 0;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -565,15 +574,5 @@ button.cancel-btn {
   .cart-list img {
     width: 80px;
     height: 80px;
-  }
-
-  button.checkout-btn {
-    width: 100%;
-    margin: 15px 0;
-  }
-
-  button.cancel-btn {
-    width: 100%;
-    margin: 5px 0;
   }
 }
