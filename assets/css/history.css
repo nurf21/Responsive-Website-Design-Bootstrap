@@ -3,6 +3,10 @@
     src: url(../font/AirbnbCerealBook.ttf);
 }
 
+body {
+    font-family: Airbnb Cereal App;
+}
+
 header .col-lg-12 {
     height: 100px;
     background: #ffffff;
@@ -18,7 +22,6 @@ header .col-lg-12 {
 }
 
 header h1 {
-    font-family: Airbnb Cereal App;
     font-size: 30px;
     margin: auto;
     text-align: center;
@@ -80,7 +83,6 @@ a,
 }
 
 .col-lg-4 .container {
-    font-family: Airbnb Cereal App;
     margin: auto 20px;
 }
 
@@ -130,12 +132,10 @@ a,
 }
 
 .revenue h4 {
-    font-family: Airbnb Cereal App;
     font-size: 30px;
 }
 
 .dropdown-toggle {
-    font-family: Airbnb Cereal App;
     color: #4F4E4E;
     background: #CECECE;
     border-radius: 10px;
@@ -159,7 +159,6 @@ a,
 }
 
 .recent-order h4 {
-    font-family: Airbnb Cereal App;
     font-size: 30px;
 }
 
@@ -167,7 +166,6 @@ table {
     padding: 20px 0;
     margin: 0 20px;
     text-align: center;
-    font-family: Airbnb Cereal App;
     font-size: 15px;
 }
 
@@ -177,7 +175,6 @@ table tbody {
 
 #addModal .modal-body .row {
     font-size: 18px;
-    font-family: Airbnb Cereal App;
     font-weight: bold;
 }
 
@@ -185,7 +182,6 @@ table tbody {
     border: 1px solid #CECECE;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    font-family: Airbnb Cereal App;
 }
 
 #addModal .modal-body .col-lg-6.align-self-end {
@@ -198,7 +194,6 @@ table tbody {
     background: #F24F8A;
     border-radius: 10px;
     border: none;
-    font-family: Airbnb Cereal App;
     font-size: 18px;
     color: #FFFFFF;
     margin-right: 10px;
@@ -210,7 +205,6 @@ table tbody {
     background: #57CAD5;
     border-radius: 10px;
     border: none;
-    font-family: Airbnb Cereal App;
     font-size: 18px;
     color: #FFFFFF;
 }
